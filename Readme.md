@@ -74,20 +74,20 @@ service nginx restart
 
 exit
 
-### Uma dica importante relacionada a volume e esse container: não utilizar a extensão do VS code
+## Uma dica importante relacionada a volume e esse container: não utilizar a extensão do VS code
 Pq se vc utilizar ela, editar e salvar algum arquivo que esta vindo a partir de um volume ela irá causar um erro de permissão na maquina local, pois ela altera o proprietário do arquivo para root. Esse container está usando o usuario 'usuario' que é o mesmo da máquina local, então é possível mexer no arquivo a partir da maquina local mesmo pois ele considera o diretório que foi considerado o volume, o mesmo tanto do container quanto da máquina local, tanto que se vc criar um container, entrar no terminal desse container a partir do comando:
 
-docker exec -it 2be0c92e0df3 /bin/bash
+### docker exec -it 2be0c92e0df3 /bin/bash
 
 esse 2be0c92e0df3 é o id do container
 
 poderá ir até o diretório /var/www/html/template que é o diretório que foi copiado como volume
 
-e fazer um touch teste como exemplo, ele irá criar um arquivo na máquina local a partir do terminal do container por conta do volume
+### e fazer um touch teste como exemplo, ele irá criar um arquivo na máquina local a partir do terminal do container por conta do volume
 
 e a pasta template é a pasta q foi puxada a partir do volume então é bom especificar o usuario e o grupo dela na maquina local, para isso usar o comando: 
 
-sudo chown usuario:usuario /var/www/html/template
+### sudo chown usuario:usuario /var/www/html/template
 
 para ficar com o usuario e grupo igual o do container em si
 
