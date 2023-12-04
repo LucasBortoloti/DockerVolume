@@ -18,7 +18,7 @@ docker images
 
 ### Para inicializar o container a partir da imagem:
 
-docker run -d --network=host -p 880:880 -v /var/www/html/template/:/var/www/html/template dockerlocal
+docker run -d --network=host -p 8080:8080 -v /var/www/html/template/:/var/www/html/template dockerlocal
 
 Sendo o comando network=host para puxar o banco de dados da máquina local, o -p 880:880 sendo a porta que o nginx vai utilizar, o -v é o volume que foi criado especificando o diretório da máquina local que vai ser incluída no diretório do container e esse dockerlocal é o nome da imagem que foi criada a partir do arquivo Dockerfile
 
