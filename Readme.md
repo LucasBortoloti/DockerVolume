@@ -83,13 +83,13 @@ esse 2be0c92e0df3 é o id do container
 
 poderá ir até o diretório /var/www/html/template que é o diretório que foi copiado como volume
 
-### e fazer um touch teste como exemplo, ele irá criar um arquivo na máquina local a partir do terminal do container por conta do volume
+### E fazer um touch teste como exemplo, ele irá criar um arquivo na máquina local a partir do terminal do container por conta do volume
 
-e a pasta template é a pasta q foi puxada a partir do volume então é bom especificar o usuario e o grupo dela na maquina local, para isso usar o comando: 
+e a pasta template é a pasta q foi puxada a partir do volume então é bom especificar o usuario e o grupo dela na maquina local para ter essas mesmas configurações no container, usar o comando: 
 
 ### sudo chown usuario:usuario /var/www/html/template
 
-para ficar com o usuario e grupo igual o do container em si
+para ficar com o usuario e grupo igual o do container em si que foi especificado no dockerfile
 
 ### Exemplo de Docker com Adianti:
 
