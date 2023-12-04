@@ -75,11 +75,13 @@ service nginx restart
 exit
 
 ## Uma dica importante relacionada a volume e esse container: não utilizar a extensão do VS code
-Pq se vc utilizar ela, editar e salvar algum arquivo que esta vindo a partir de um volume ela irá causar um erro de permissão na maquina local, pois ela altera o proprietário do arquivo para root. Esse container está usando o usuario 'usuario' que é o mesmo da máquina local, então é possível mexer no arquivo a partir da maquina local mesmo pois ele considera o diretório que foi considerado o volume, o mesmo tanto do container quanto da máquina local, tanto que se vc criar um container, entrar no terminal desse container a partir do comando:
+Pq se vc utilizar ela, editar e salvar algum arquivo que esta vindo a partir de um volume ela irá causar um erro de permissão na maquina local, pois ela altera o proprietário do arquivo para root. Esse container está usando o usuario 'usuario' que é o mesmo da máquina local, então é possível mexer no arquivo a partir da maquina local mesmo, pois ele considera tanto o diretório do container quanto o da máquina local o mesmo, tanto que se vc criar um container e entrar no terminal desse container, e colocar os seguintes comandos:
 
 ### docker exec -it 2be0c92e0df3 /bin/bash
 
 esse 2be0c92e0df3 é o id do container
+
+para entrar mo terminal do container
 
 poderá ir até o diretório /var/www/html/template que é o diretório que foi copiado como volume
 
