@@ -91,7 +91,7 @@ e a pasta template é a pasta q foi puxada a partir do volume então é bom espe
 
 ### sudo chown usuario:usuario /var/www/html/template
 
-para ficar com o usuario e grupo igual o do container em si que foi especificado no dockerfile
+fazer esse comando antes de criar o container
 
 ### Exemplo de Docker com Adianti:
 
