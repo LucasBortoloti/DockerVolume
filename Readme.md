@@ -79,11 +79,11 @@ Eu tive um problema com a extensão do docker, onde qualquer alteração que eu 
 
 ### Fazer teste para ver se está funcionando:
 
+Entrar no terminal do container
+
 docker exec -it 2be0c92e0df3 /bin/bash
 
 esse 2be0c92e0df3 é o id do container
-
-para entrar no terminal do container
 
 poderá ir até o diretório /var/www/html/template que é o diretório que foi copiado como volume
 
