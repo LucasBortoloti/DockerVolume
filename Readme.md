@@ -77,6 +77,8 @@ exit
 ## Uma dica importante relacionada a volume e a extensão docker no vs code:
 Eu tive um problema com a extensão do docker, onde qualquer alteração que eu fizesse em algum arquivo do container a partir da extensão, ele salvava como root mesmo eu especificando o usuario no dockerfile, acredito que deve haver alguma solução para isso, mas eu não consegui arrumar esse problema. Para isso utilizei a extensão Dev Container
 
+Fazer teste para ver se está funcionando:
+
 ### docker exec -it 2be0c92e0df3 /bin/bash
 
 esse 2be0c92e0df3 é o id do container
