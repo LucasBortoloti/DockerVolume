@@ -79,7 +79,7 @@ Eu tive um problema com a extensão do docker, onde qualquer alteração que eu 
 
 ### Fazer teste para ver se está funcionando:
 
-### docker exec -it 2be0c92e0df3 /bin/bash
+docker exec -it 2be0c92e0df3 /bin/bash
 
 esse 2be0c92e0df3 é o id do container
 
