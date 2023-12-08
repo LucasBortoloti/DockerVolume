@@ -74,8 +74,8 @@ service nginx restart
 
 exit
 
-## Uma dica importante relacionada a volume e esse container: não utilizar a extensão do VS code
-Pq se vc utilizar ela, editar e salvar algum arquivo que esta vindo a partir de um volume ela irá causar um erro de permissão na maquina local, pois ela altera o proprietário do arquivo para root. Esse container está usando o usuario 'usuario' que é o mesmo da máquina local, então é possível mexer no arquivo a partir da maquina local mesmo, pois ele considera tanto o diretório do container quanto o da máquina local o mesmo, tanto que se vc criar um container e usar esses comandos:
+## Uma dica importante relacionada a volume e a extensão docker no vs code:
+Eu tive um problema com a extensão do docker, onde qualquer alteração que eu fizesse em algum arquivo do container a partir da extensão, ele salvava como root mesmo eu especificando o usuario no dockerfile, acredito que deve haver alguma solução para isso, mas eu não consegui arrumar esse problema. Para isso utilizei a extensão Dev Container
 
 ### docker exec -it 2be0c92e0df3 /bin/bash
 
