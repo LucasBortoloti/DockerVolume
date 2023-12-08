@@ -103,7 +103,9 @@ https://github.com/bjverde/formDocker/tree/master/adianti_debian11_php8.1
  
 ir no diretório do container etc/apache2/ports.conf e mudar a porta para a que foi especificada no container
 
-### Comando para restartar o apache, estando dentro do terminal do sistema operacional do container usar o comando:
+### Comando para restartar o apache:
+
+estando dentro do terminal do sistema operacional do container:
 
 service apache2 restart
 
